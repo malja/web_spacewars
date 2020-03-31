@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SpaceWars</title>
+    <meta charset="utf8">
+
+    <script type="text/javascript" src="./js/questionGenerator.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>SpaceWars</h1>
+            <p>
+                Earth is under attack from the space. You are the commander of Planetary Space Defence Base. Defend our
+                beloved planet!
+            </p>
+            <p>
+                Base has two shield and it's own structure - that makes two posibilities for mistake. But I would
+                recommend you not to rely on it much.
+            </p>
+        </header>
+        <aside>
+            <div class="line">
+                <label for="maxNumber">Maximal number used in generator:</label>
+                <input type="number" id="maxNumber" value=20>
+            </div>
+
+            <div class="line">
+                <label for="useWholeNumbers">Use only whole numbers calculations:</label>
+                <input type="checkbox" id="useWholeNumbers" checked>
+            </div>
+
+            <div class="line">
+                <label for="useDivision">Division:</label>
+                <input type="checkbox" id="useDivision">
+            </div>
+
+            <div class="line">
+                <label for="useMultiplication">Multiplication:</label>
+                <input type="checkbox" id="useMultiplication">
+            </div>
+
+            <div class="line">
+                <button id="start">New Game</button>
+            </div>
+
+        </aside>
+        <main>
+            <canvas id="game" style="width: 800px; height: 600px;"></canvas>
+        </main>
+        <footer>
+            Created by Jan Malčák
+        </footer>
+    </div>
+</body>
+
+</html>
